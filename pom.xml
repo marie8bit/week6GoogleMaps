@@ -7,10 +7,23 @@
     <groupId>groupId</groupId>
     <artifactId>week6GoogleMaps</artifactId>
     <version>1.0-SNAPSHOT</version>
-
-    <dependency>
-        <groupId>com.google.maps</groupId>
-        <artifactId>google-maps-services</artifactId>
-        <version>(insert latest version)</version>
-    </dependency>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+    <dependencies>
+        <dependency>
+            <groupId>com.google.maps</groupId>
+            <artifactId>google-maps-services</artifactId>
+            <version>0.1.15</version>
+        </dependency>
+    </dependencies>
 </project>
